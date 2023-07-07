@@ -1,0 +1,215 @@
+.game_field{
+    display: flex;
+}
+
+.game_menuBar{
+    padding: 30px 15px 15px 15px;
+    border-left: 5px solid black;
+    width: 180px;
+    background-image: url("/assets/img/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu_stats{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.logoText{
+    font-family: "PixeloidSansBold", sans-serif;
+    font-weight: 600;
+}
+
+.block{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url("/assets/img/player.png");
+    background-size: 50px 50px;
+    animation: 3s linear;
+    transition: 0.2s;
+}
+
+.bullet{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transition: 0.2s;
+    background-image: url("/assets/img/playerLaser.png");
+    background-size: 30px 30px;
+    display: none;
+}
+
+.fire{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transition: 0.2s;
+    background-image: url("/assets/img/playerLaser.png");
+    background-size: 30px 30px;
+    display: none;
+}
+
+.row{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin: 250px auto 0 auto;
+    position: relative;
+}
+
+.timerRow{
+    display: flex;
+    gap: 5px;
+}
+
+.countRow{
+    display: flex;
+    gap: 5px;
+}
+
+.lifeRow{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recordRow{
+    display: flex;
+    gap: 5px;
+}
+
+.lifeImgBlock{
+    display: flex;
+    gap: 15px;
+}
+
+.enemies{
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/img/enemies.png");
+    background-size: 50px 50px;
+    transition: 0.3s;
+}
+
+.enemies_row{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.enemBullet{
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/enemiesLaser.png");
+    background-size: 30px 30px;
+    position: absolute;
+    display: none;
+    z-index: 5;
+    transition: 0.1s;
+}
+
+.life{
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/img/player.png");
+    background-size: 30px 30px;
+}
+
+.count{
+    color: red;
+}
+
+.notEnemies{
+    position: absolute;
+}
+
+.space{
+    width: 500px;
+    margin: 0 auto;
+    background-image: url("/assets/img/space.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.countImg{
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.empty{
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/img/empty.png");
+    background-size: 50px 50px;
+    animation: spin 5s linear 0s infinite;
+}
+
+.pause{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 675px;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pauseImg{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.pauseCount{
+    color: red;
+    font-size: 80px;
+    font-weight: 600;
+    display: none;
+}
+
+.pauseButton{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("/assets/img/pause.png");
+    background-size: 30px 30px;
+}
+
+.gameClose{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+
+.game_menuColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

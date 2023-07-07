@@ -1,0 +1,67 @@
+.start {
+    background-image: url("/assets/img/startScreen.gif");
+    opacity: 0.7;
+    background-size: cover;
+    width: 790px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.start-login {
+    position: absolute;
+    z-index: 998;
+    top: 230px;
+    right: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.logotype {
+    display: flex;
+    gap: 5px;
+}
+
+.logotypeText {
+    font-size: 40px;
+}
+
+.startScreenForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gameStart {
+    padding: 10px 6px;
+    font-size: 16px;
+    font-family: "PixeloidSans", sans-serif;
+    background-color: #6a6aad;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gameStart:hover{
+    background-color: #4d4d8a;
+    transition: 0.3s;
+}
+
+.nickNameInput {
+    padding: 6px;
+    font-size: 16px;
+    font-family: "PixeloidSans", sans-serif;
+}
+
+.nickNameInput:focus {
+    outline: none;
+}
+
+.errorLogin{
+    font-size: 16px;
+    font-family: "PixeloidSans", sans-serif;
+    color: red;
+}

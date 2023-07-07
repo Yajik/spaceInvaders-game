@@ -1,0 +1,54 @@
+.leaderBoard{
+    padding: 50px 0;
+    background-image: url("/assets/img/menuBackground.png");
+    background-size: cover;
+    width: 790px;
+    height: 600px;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.leaderBoard-title{
+    font-family: "PixeloidSans", sans-serif;
+    font-size: 40px;
+    color: red;
+}
+
+.next{
+    padding: 10px 20px;
+    font-size: 22px;
+    font-family: "PixeloidSans", sans-serif;
+    background-color: #6a6aad;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.next:hover{
+    background-color: #4d4d8a;
+    transition: 0.3s;
+}
+
+.leaderList-name{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 15px;
+}
+
+.leaderList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.leaderBoardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}

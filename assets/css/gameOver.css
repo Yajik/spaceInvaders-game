@@ -1,0 +1,43 @@
+.gameOver{
+    background-image: url("/assets/img/menuBackground.png");
+    background-size: cover;
+    width: 790px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gameOver-title{
+    font-family: "PixeloidSans", sans-serif;
+    font-size: 40px;
+    color: red;
+}
+
+.next{
+    padding: 10px 20px;
+    font-size: 22px;
+    font-family: "PixeloidSans", sans-serif;
+    background-color: #6a6aad;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.next:hover{
+    background-color: #4d4d8a;
+    transition: 0.3s;
+}
+
+.gameOver-name{
+    display: flex;
+    font-size: 30px;
+    gap: 10px;
+}
+
+.none{
+    display: none;
+}

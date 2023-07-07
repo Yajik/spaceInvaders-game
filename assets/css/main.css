@@ -1,0 +1,38 @@
+@import "fonts.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/assets/img/background.jpg");
+}
+
+h1{
+    font-size: 22px;
+    color: white;
+    font-family: "PixeloidSans", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-image: url("/assets/img/arcade.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.game__frame{
+    border: 5px solid black;
+    background-color: black;
+    position: relative;
+}
